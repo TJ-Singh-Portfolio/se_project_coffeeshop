@@ -103,7 +103,65 @@
             </div>
           </div>
         </section>
-        <section id="reservation-section" class="reservation"></section>
+        <section id="reservation-section" class="reservation">
+          <div class="reservation__section">
+            <h2 class="reservation__title">Book a table</h2>
+            <form class="form reservation__form">
+              <fieldset class="form__fieldset">
+                <label for="reservation-name" class="form__label">Name</label>
+                <input
+                  type="text"
+                  class="form__input"
+                  id="reservation-name"
+                  name="reservation-name"
+                  placeholder="Name Surname"
+                  required
+                />
+                <label for="reservation-number" class="form__label"
+                  >Number of guests</label
+                >
+                <input
+                  type="number"
+                  min="1"
+                  max="8"
+                  class="form__input"
+                  id="reservation-number"
+                  name="reservation-count"
+                  placeholder="1-8"
+                  required
+                />
+                <label for="reservation-date" class="form__label"
+                  >Date & time</label
+                >
+                <input
+                  type="datetime-local"
+                  class="form__input"
+                  id="reservation-date"
+                  name="reservation-date"
+                  required
+                />
+                <label for="reservation-email" class="form__label"
+                  >Your email</label
+                >
+                <input
+                  type="email"
+                  class="form__input"
+                  id="reservation-email"
+                  name="reservation-email"
+                  placeholder="emial@email.com"
+                  required
+                />
+                <button type="submit" class="form__button">Book a table</button>
+                <label class="form__label form__label_align"
+                  >I agree with the terms of use<input
+                    type="checkbox"
+                    class="form__checkbox"
+                    required
+                /></label>
+              </fieldset>
+            </form>
+          </div>
+        </section>
         <section id="menu-section" class="menu"></section>
         <section id="about-section" class="about"></section>
       </main>
