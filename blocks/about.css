@@ -7,6 +7,7 @@
   }
   100% {
     transform: scale(1.2);
+    opacity: 0;
   }
 }
 .about {
@@ -23,7 +24,7 @@
   color: #fff;
   max-width: 251px;
   margin: 0;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -62,13 +63,5 @@
 }
 
 .about__circle_animation_blurred {
-  width: 426px;
-  height: 426px;
-  background-color: #2f80ed;
-  border-radius: 50%;
-  z-index: 1;
-  position: absolute;
-  top: -152px;
-  left: -129px;
   animation: pulsate 1.3s ease-in-out infinite;
 }
